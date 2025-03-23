@@ -5,6 +5,9 @@ var torneioBeachTenis = window.document.getElementById("torneioBeachTenis")
 var unifomefutebol = window.document.getElementById("uniformefutebol")
 var setaEsquerda = window.document.getElementById("seta-esquerda")
 
+
+
+
 function RolarParaDireita() {
     domingoDivertido.style = "display:none"
     futebolCerveja.style = "display:none"
@@ -22,3 +25,4 @@ function RolarParaEsquerda() {
     setaDireita.style = "display:flex"
     setaEsquerda.style = "display:none"
 }
+
