@@ -1,28 +1,28 @@
-var setaDireita = window.document.getElementById("seta-direita")
-var domingoDivertido = window.document.getElementById("domingoDivertido")
-var futebolCerveja = window.document.getElementById("futebolCerveja")
-var torneioBeachTenis = window.document.getElementById("torneioBeachTenis")
-var unifomefutebol = window.document.getElementById("uniformefutebol")
-var setaEsquerda = window.document.getElementById("seta-esquerda")
+const gap = 8;
 
+const carousel = document.getElementById("carousel"),
+  content = document.getElementById("content"),
+  next = document.getElementById("next"),
+  prev = document.getElementById("prev");
 
+next.addEventListener("click", e => {
+  carousel.scrollBy(width + gap, 0);
+  if (carousel.scrollWidth !== 0) {
+    prev.style.display = "flex";
+  }
+  if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+    next.style.display = "none";
+  }
+});
+prev.addEventListener("click", e => {
+  carousel.scrollBy(-(width + gap), 0);
+  if (carousel.scrollLeft - width - gap <= 0) {
+    prev.style.display = "none";
+  }
+  if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+    next.style.display = "flex";
+  }
+});
 
-
-function RolarParaDireita() {
-    domingoDivertido.style = "display:none"
-    futebolCerveja.style = "display:none"
-    unifomefutebol.style = "display:flex"
-    torneioBeachTenis.style = "display:flex"
-    setaDireita.style = "display:none"
-    setaEsquerda.style = "display: flex"
-}
-
-function RolarParaEsquerda() {
-    domingoDivertido.style = "display:flex"
-    futebolCerveja.style = "display:flex"
-    unifomefutebol.style = "display:none"
-    torneioBeachTenis.style = "display:none"
-    setaDireita.style = "display:flex"
-    setaEsquerda.style = "display:none"
-}
-
+let width = carousel.offsetWidth;
+window.addEventListener("resize", e => (width = carousel.offsetWidth));
