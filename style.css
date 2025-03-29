@@ -10,12 +10,12 @@
 ul{
   list-style-type: none;
   margin: 0;
-  height: 70px;
+  height: 90px;
   font-size: 20px;
   overflow: hidden;
   background-color: #333;
   padding-left: 150px;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 
 li{
@@ -108,7 +108,7 @@ p{
   display: grid;
   place-items: center;
   text-align: center;
-  width: 1050px;
+  width: 1200px;
   overflow: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -176,8 +176,8 @@ p{
 }
 
 .item {
-  width: 500px;
-  height: 160px;
+  width: 580px;
+  height: 200px;
   border-radius: 10px;
   background-color: transparent;
 }
