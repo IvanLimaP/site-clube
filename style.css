@@ -108,7 +108,7 @@ p{
   display: grid;
   place-items: center;
   text-align: center;
-  width: 1050px;
+  width: 1060px;
   overflow: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
