@@ -3,12 +3,19 @@
     margin: 0px;
 }
 
+#menuSuperior{
+  margin-top: 0;
+}
+
 ul{
   list-style-type: none;
   margin: 0;
+  height: 70px;
+  font-size: 20px;
   overflow: hidden;
   background-color: #333;
   padding-left: 150px;
+  padding-top: 10px;
 }
 
 li{
@@ -22,7 +29,8 @@ li a {
   padding: 18px 30px;
   text-decoration: none;
   background-color: #333;
-  width: 80px;
+  width: 150px;
+  height: 70px;
 }
 
 li a:hover:not(.home-menu-supeior) {
@@ -31,11 +39,11 @@ li a:hover:not(.home-menu-supeior) {
 }
 
 .home-menu-supeior{
-  background-color: rgba(0, 168, 89, 1);
-  color: white;
+  color: rgba(0, 168, 89, 1);
 }
 
 .home-menu-supeior:hover {
+  color: white;
   background-color: rgb(14, 194, 110);
 }
 
@@ -46,27 +54,28 @@ li a:hover:not(.home-menu-supeior) {
     font-style: normal;
     font-size: 25px;
     display: grid;
+    place-items: center;
+    text-align: center;
     grid-auto-flow: column;
     text-align:left;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    margin-top: 0%;
-    height: 200px;
+    margin-top: 0;
+    height: 300px;
+    background-color: rgba(0, 168, 89, 1);
+   /* 
     background-position: bottom;
     background-size: cover;
     background-image: url(./imagens/Imagem-Piscina.jpg);
+    */
 
-}
+  }
 
 #iconeMenu{
     background-color: transparent;
-    margin-left: 20%;
 }
 
 #textoMenu{
     color: white;
     background-color: transparent;
-    margin-top: 5%;
 }
 
 #menuInformativo{
@@ -78,8 +87,11 @@ li a:hover:not(.home-menu-supeior) {
 }
 
 #imagemInformativo{
-    
     margin-left: 10%;
+}
+
+p{
+  font-size: 20px;
 }
 
 #carrousel{
@@ -147,7 +159,7 @@ li a:hover:not(.home-menu-supeior) {
 }
 .logos-slide {
   display: inline-block;
-  animation: 10s slide infinite linear;
+  animation: 20s slide infinite linear;
 }
 
 
@@ -157,7 +169,7 @@ li a:hover:not(.home-menu-supeior) {
     grid-auto-flow: column;
     place-items: center;
     width: auto;
-    height: 150px;
+    height: 200px;
     background-color: rgba(0, 168, 89, 1);
   }
 
@@ -182,7 +194,7 @@ li a:hover:not(.home-menu-supeior) {
 
 input{
   width: 350px;
-  height: 30px;
+  height: 50px;
   margin: 12px;
   border-color: black;  
   border-radius: 5px;
@@ -206,4 +218,5 @@ button:hover{
   background-color: rgb(16, 230, 130);
   transition-duration: 0,5s;
   transform: translateY(-5px);
+  box-shadow: 3px 5px rgba(39, 39, 39, 0.226);
 }

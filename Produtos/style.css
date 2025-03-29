@@ -1,0 +1,18 @@
+#divCamisa{
+    margin-top: 100px;
+    width: auto;
+    height: 450px;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    background-color: rgba(212, 211, 211, 0.336);
+}
+
+#divUniformeFutebol{
+    margin-top: 100px;
+    width: auto;
+    height: 450px;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+}
