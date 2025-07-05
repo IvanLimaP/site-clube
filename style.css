@@ -290,7 +290,9 @@ input{
   }
   
   p {
-    font-size: 18px;
+    display: flex;
+    text-align: center;
+    font-size: 15px;
   }
 
   #titulo-formulario {
@@ -311,6 +313,12 @@ input{
 
     #wrapper {
       display: none;
+    }
+
+    input {
+      width: auto;
+      height: 60px;
+    
     }
 
       #footer {
